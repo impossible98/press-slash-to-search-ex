@@ -1,8 +1,14 @@
 // 自带 Press / to Search
 // google.com
 // youtube.com
+
+// www.bilibili.com
 if (location.host.includes('www.bilibili.com')) {
   handleKeydown('.nav-search-input');
+}
+// www.douyu.com
+else if (location.host.includes('www.douyu.com')) {
+  handleKeydown('#header-search-input.Search-text');
 }
 
 function handleKeydown(query: string) {
